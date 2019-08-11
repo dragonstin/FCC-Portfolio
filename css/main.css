@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Roboto&display=swap');
 * {
     padding: 0;
     margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -9,18 +12,53 @@ body {
 }
 
 #navbar {
-    display: flex;
     color: whitesmoke;
-    background-color: #39883f
-    ;
+    background-color: rgb(70, 156, 73);
+    height: 30px;
 }
 
 #navbar ul {
-    text-decoration: none;
+    list-style-type: none;
+    overflow: hidden;
 }
 
 #navbar ul li {
-    display: block;
+    float: left;
+    width: 33%;
 }
 
-#navbar ul li a {}
+a {
+    text-decoration: none;
+}
+
+#navbar ul li a {
+    display: block;
+    color: whitesmoke;
+    padding: 5px 0;
+    height: 20px;
+}
+
+#navbar ul li a:hover {
+    background-color: #000000;
+}
+
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+    padding-top: 40vh;
+}
+
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 250%;
+}
+
+p {
+    color: rgb(70, 156, 73);
+    font-style: italic;
+    font-size: 130%;
+}
+
+#projects{
+    
+}
