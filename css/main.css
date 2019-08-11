@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #333333;
+    color: whitesmoke;
+}
+
+#navbar {
+    display: flex;
+    color: whitesmoke;
+    background-color: #39883f
+    ;
+}
+
+#navbar ul {
+    text-decoration: none;
+}
+
+#navbar ul li {
+    display: block;
+}
+
+#navbar ul li a {}
