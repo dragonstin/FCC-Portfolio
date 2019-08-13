@@ -4,17 +4,20 @@
     margin: 0;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 body {
     background-color: #333333;
-    color: whitesmoke;
 }
 
 #navbar {
-    color: whitesmoke;
-    background-color: rgb(70, 156, 73);
+    font-weight: 500;
     height: 30px;
+    position: fixed;
+    width: 100%;
+    background-color: #333333;
 }
 
 #navbar ul {
@@ -24,41 +27,142 @@ body {
 
 #navbar ul li {
     float: left;
-    width: 33%;
-}
-
-a {
-    text-decoration: none;
+    width: 33.3%;
 }
 
 #navbar ul li a {
     display: block;
-    color: whitesmoke;
+    border: 1px solid rgb(70, 156, 73);
+    margin: 0 2px;
     padding: 5px 0;
     height: 20px;
 }
 
 #navbar ul li a:hover {
-    background-color: #000000;
+    background-color: rgb(70, 156, 73);
 }
 
 #welcome-section {
     width: 100%;
     height: 100vh;
-    padding-top: 40vh;
+}
+
+h1, h2 {
+    font-family: 'Fira Sans', sans-serif;
 }
 
 h1 {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 250%;
+    padding-top: 45vh;
+    font-size: 210%;
 }
 
 p {
+    margin: 0 10%;
+    border-top: 1px solid rgb(70, 156, 73);
     color: rgb(70, 156, 73);
-    font-style: italic;
     font-size: 130%;
+    font-style: italic;
 }
 
-#projects{
-    
+/* ---- section projects ---- */
+
+#projects {
+    margin: auto;
+    background-color: #505050;
+    width: 100%;
+    text-align: center;
+}
+
+.row, .row-contact {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.row {
+    flex-direction: column;
+}
+
+h2 {
+    padding-top: 20px;
+    text-align: left;
+    font-size: 200%;
+    padding-bottom: 20px;
+    color: whitesmoke;
+}
+
+.column, .column-contact {
+    padding: auto;
+}
+
+.column {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #333333;
+    margin-bottom: 20px;
+}
+
+.column a {
+    height: 180px;
+}
+
+.column a:hover {
+    /* aumentar o quadro */
+}
+
+.project-tile {
+    text-align: center;
+    color: rgb(70, 156, 73);
+    font-size: 110%;
+    font-style: italic;
+    padding: 10px;
+}
+
+.column img {
+    margin: auto;
+    width: 100%;
+}
+
+/* ---- Contact --- */
+
+.row-contact {
+    flex-direction: row;
+}
+
+.column-contact {
+    border: 1px solid rgb(70, 156, 73);
+    width: 50%;
+    padding: 10px;
+    margin: 10px; 
+}
+
+/* -------------------- footer ----------------*/
+
+footer {
+    display: row;
+    align-content: center;
+    text-align: center;
+    background: #333;   
+}
+
+#end {
+    width: 100%;
+    text-align: center;
+    font-size: 90%;
+    margin: auto;
+}
+
+footer a {
+    color: rgb(70, 156, 73);
+}
+
+footer a:hover {
+    color: #ccc;
+}
+
+/* --- 600px --- */
+
+@media (min-width:600px) {
+    .row{
+        flex-direction: row;
+    }
 }

@@ -3,58 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
+    <meta http-equiv="X-UA-Compatible" co8 ntent="ie=edge">
+    <link rel="stylesheet" href="css/main.css">  
+    <script src="https://use.fontawesome.com/452826394c.js"></script>
     <title>FCC - Portfolio</title>
 </head>
+
 <body>
     <nav id="navbar">
         <ul>
             <li><a href="#welcome-section">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects" class="between">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
+    <!--   welcome section -->
     <section id="welcome-section">
         <h1>Hi, I am Fernanda</h1>
         <p>a web developer</p>
     </section>
 
+
+    <!--   projects     -->
     <section id="projects">
         <div class="row">
+            <h2>Projects</h2>
             <div class="column">
-                <header class="project-tile">Tribute Page</header>
-                <p><a href="https://codepen.io/fernandadagostin/full/ewGdBr" target="_blank">
-                <img src="" alt="">
-                </a></p>
+                <a href="https://codepen.io/fernandadagostin/full/ewGdBr" target="_blank">
+                    <img src="https://raw.githubusercontent.com/fernandadagostin/FCC-Portfolio/master/images/TributePage.PNG"
+                     alt="Tribute Page - image"/>
+                        <header class="project-tile">Tribute Page</header>
+                </a>
             </div>
             <div class="column">
-                <header class="project-tile">Survey Form</header>
-                <p><a href="https://codepen.io/fernandadagostin/full/WqWPmo" target="_blank">project link</a></p>
+                <a href="https://codepen.io/fernandadagostin/full/WqWPmo" target="_blank">
+                    <img src="https://raw.githubusercontent.com/fernandadagostin/FCC-Portfolio/master/images/SurveyForm.PNG"
+                        alt="Survey Form- image" />
+                    <header class="project-tile">Survey Form</header>
+                </a>
             </div>
             <div class="column">
-                <header class="project-tile">Product Landing Page</header>
-                <p><a href="https://codepen.io/fernandadagostin/full/RXrMKr" target="_blank">project link</a></p>
+                <a href="https://codepen.io/fernandadagostin/full/RXrMKr" target="_blank">
+                    <img src="https://raw.githubusercontent.com/fernandadagostin/FCC-Portfolio/master/images/Product.PNG"
+                        alt="Product Landing Page - image" />
+                    <header class="project-tile">Product Landing Page</header>
+                </a>
             </div>
             <div class="column">
-                <header class="project-tile">Technical Documentation Page</header>
-                <p><a href="https://codepen.io/fernandadagostin/full/pMVWXG" target="_blank">project link</a></p>
+                <a href="https://codepen.io/fernandadagostin/full/pMVWXG" target="_blank">
+                    <img src="https://raw.githubusercontent.com/fernandadagostin/FCC-Portfolio/master/images/Documentation.png"
+                        alt="Technical Documentation Page - image" />
+                    <header class="project-tile">Technical Documentation Page</header>
+                </a>
             </div>
         </div>
     </section>
 
+    <!--   contact     -->
     <section id="contact">
-        <p>Contact informations</p>
-        <a href="https://github.com/fernandadagostin" target="_blank" id="profile-link">My profile on GitHub</a>
-        <a href="https://www.freecodecamp.org/fcc5286bd05-894e-4c2b-a5ee-2e50bd340834" target="_blank" >My profile on FreeCodeCamp.org</a>
+        <div class="row">
+            <h2>Contact</h2>
+            <div class="row-contact">
+                <div class="column-contact">
+                    <a href="https://github.com/fernandadagostin" target="_blank" id="profile-link">GitHub</a>
+                </div>
+                <div class="column-contact">
+                    <a href="https://www.freecodecamp.org/fcc5286bd05-894e-4c2b-a5ee-2e50bd340834" target="_blank" >FreeCodeCamp</a>
+                </div>
+            </div>
+        </div>
     </section>
+    <footer>
+        <p class="" id="end">This page coded with love by Fernanda for <a href="https://www.freecodecamp.org/"
+                target="_blank"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a>
+        </p>
+    </footer>
 </body>
 </html>
+
+<!-- This is necessary to run the test from FreeCodeCamp (script bellow)-->
+<link rel="stylesheet" href="css/main.css">
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-<!--
-User Story #9: My portfolio should have at least one media query.
-User Story #10: The height of the welcome section should be equal to the height of the viewport.
-User Story #11: The navbar should always be at the top of the viewport.
--->
